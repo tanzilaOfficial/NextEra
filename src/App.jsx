@@ -333,7 +333,7 @@ Servers, storage, networking, and enterprise IT components sourced for B2B busin
             <div className="hardware-tiles">
               <div className="tile tile-large">
                 <img
-                  src="src/assets/images/SERVER1.jpg"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw8aTS9M9B9bPdsQ1JxGrNxMUcTEGB_Ye785xYjIPh1X20gUlupwbZtE4&s=10"
                   alt="Enterprise server rack"
                 />
                 <span>Servers</span>
