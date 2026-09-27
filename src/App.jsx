@@ -22,7 +22,7 @@ const products = [
     price: "$289.00",
     badge: "NEW",
     image:
-      "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=900&q=85",
+      "https://5.imimg.com/data5/SELLER/Default/2024/5/420590195/KC/NV/ID/3094787/dell-960gb-sata-6g-ssd-500x500.jpg",
     description:
       "Enterprise-grade SATA solid state drive designed for reliable data-center workloads and high availability.",
     specs: ["960GB Capacity", "SATA III", "2.5-inch", "Enterprise"],
@@ -34,8 +34,7 @@ const products = [
     type: "Server Chassis",
     price: "$2,480.50",
     badge: "FEATURED",
-    image:
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=85",
+    image: '/src/assets/images/category-servers.jpg',
     description:
       "Professional 2U rack server chassis with redundant power architecture for enterprise deployments.",
     specs: ["2U Rack", "800W PSU", "Redundant Power", "Hot Swap"],
@@ -47,8 +46,7 @@ const products = [
     type: "Switches",
     price: "$1,314.00",
     badge: "TOP",
-    image:
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=85",
+    image:"https://cdn.prod.website-files.com/69e0036b695965871f0524ab/69e0036b695965871f0530fb_48%20Port%20PoE%2B%20L2%20Managed%20Switch.webp",
     description:
       "High-density managed switch with 48 Gigabit ports and 10G SFP+ uplinks.",
     specs: ["48 Ports", "4 × 10G SFP+", "Managed", "Enterprise"],
@@ -74,7 +72,7 @@ const products = [
     price: "Call for Price",
     badge: "",
     image:
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=85",
+      "https://motherboard-world.com/wp-content/uploads/2024/08/390054.jpg",
     description:
       "Enterprise motherboard supporting dual processors and high-capacity memory configurations.",
     specs: ["Dual Socket", "16 DIMM Slots", "IPMI 2.0", "Enterprise"],
@@ -100,7 +98,7 @@ const products = [
     price: "$331.75",
     badge: "",
     image:
-      "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=900&q=85",
+      "https://i.ebayimg.com/images/g/-1YAAOSw~ghoUZXL/s-l1200.webp",
     description:
       "High-capacity SAS enterprise hard drive designed for rack-mounted storage environments.",
     specs: ["6TB", "7200RPM", "SAS 12Gb/s", "3.5-inch"],
@@ -113,7 +111,7 @@ const products = [
     price: "$43.64",
     badge: "",
     image:
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=85",
+      "https://m.media-amazon.com/images/I/61XxDPfqJBL._AC_UF894,1000_QL80_.jpg",
     description:
       "High-speed direct attach copper cable for reliable 10 Gigabit networking connections.",
     specs: ["10Gbps", "SFP+", "DAC", "3 Meter"],
@@ -139,7 +137,7 @@ const products = [
     price: "$265.87",
     badge: "FEATURED",
     image:
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=85",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHNXEhd4ClmBMPmSnhrzqoljCuivB8KRDuDiQrMOhrEtOVy9t0VERL9vo&s=10",
     description:
       "Compact enterprise server board designed for high-density 1U rack environments.",
     specs: ["1U", "Server", "Enterprise", "High Density"],
@@ -152,7 +150,7 @@ const products = [
     price: "$1,314.41",
     badge: "",
     image:
-      "https://images.unsplash.com/photo-1563770660941-10a8e5f3e5e8?auto=format&fit=crop&w=900&q=85",
+      "https://cdn.fiberroad.com/app/uploads/2020/04/FR-2206_side-1.jpg",
     description:
       "10G media conversion solution for enterprise fiber network infrastructure.",
     specs: ["10Gbps", "Fiber", "Multimode", "Enterprise"],
@@ -165,7 +163,7 @@ const products = [
     price: "$12.40",
     badge: "",
     image:
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=85",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLtPz11Y7s3p3Egj0fgd-Sm535uh2B0wVJbjtNZdBqqZ16Fj3vcQj8ur8p&s=10",
     description:
       "Compact SATA power splitter for enterprise and workstation hardware configurations.",
     specs: ["SATA", "Power", "Y-Splitter", "6-inch"],
@@ -284,17 +282,17 @@ function App() {
               ENTERPRISE TECHNOLOGY
             </div>
 
-            <h1>
-              Hardware built for
-              <span> mission-critical </span>
-              infrastructure.
+            <h1 className="hero-title">
+              <span className="hero-title-main">
+                B2B Enterprise Hardware
+              </span>
+              <span className="hero-title-sub">built for</span>
+              <span className="hero-title-accent">mission-critical</span>
+              <span className="hero-title-sub">infrastructure.</span>
             </h1>
 
             <p>
-              Servers, storage, networking and enterprise components
-              sourced for businesses, data centers and IT teams across
-              the United States.
-            </p>
+Servers, storage, networking, and enterprise IT components sourced for B2B businesses, data centers, and IT teams across the United States.            </p>
 
             <div className="hero-actions">
               <a href="#catalog" className="primary-btn">
@@ -332,37 +330,41 @@ function App() {
           <div className="hero-visual">
             <div className="hero-glow"></div>
 
-            <div className="server-card main-server">
-              <div className="server-top">
-                <span>ENTERPRISE SERVER</span>
-                <span className="status">● ONLINE</span>
-              </div>
-
-              <div className="server-image">
+            <div className="hardware-tiles">
+              <div className="tile tile-large">
                 <img
-                  src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=90"
-                  alt="Enterprise server"
+                  src="src/assets/images/SERVER1.jpg"
+                  alt="Enterprise server rack"
                 />
+                <span>Servers</span>
               </div>
 
-              <div className="server-info">
-                <div>
-                  <small>PROCESSING</small>
-                  <strong>99.98%</strong>
+              <div className="tile tile-stack">
+                <div className="mini-tile">
+                  <img
+                    src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=90"
+                    alt="Server motherboard"
+                  />
+                  <span>Core Components</span>
                 </div>
 
-                <div>
-                  <small>UPTIME</small>
-                  <strong>24 / 7</strong>
+                <div className="mini-tile">
+                  <img
+                    src="https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=900&q=90"
+                    alt="Enterprise SSD storage"
+                  />
+                  <span>Storage</span>
                 </div>
+              </div>
 
-                <div>
-                  <small>STATUS</small>
-                  <strong>READY</strong>
-                </div>
+              <div className="tile tile-large tile-accent">
+                <img
+                  src="https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=1200&q=90"
+                  alt="Networking and processing hardware"
+                />
+                <span>Networking</span>
               </div>
             </div>
-
           </div>
 
         </div>
@@ -408,7 +410,7 @@ function App() {
       </section>
 
       {/* CATEGORIES */}
-      <section className="categories-section" id="categories">
+      {/* <section className="categories-section" id="categories">
         <div className="container">
 
           <div className="section-heading">
@@ -458,7 +460,7 @@ function App() {
 
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CATALOG */}
       <section className="catalog-section" id="catalog">
@@ -527,7 +529,7 @@ function App() {
                     className="quick-view"
                     onClick={() => setSelectedProduct(product)}
                   >
-                    Quick View
+                    View Details
                   </button>
                 </div>
 
@@ -547,22 +549,7 @@ function App() {
                     ))}
                   </div>
 
-                  <div className="product-bottom">
-
-                    <strong className="price">
-                      {product.price}
-                    </strong>
-
-                    <button
-                      className="details-btn"
-                      onClick={() =>
-                        setSelectedProduct(product)
-                      }
-                    >
-                      View Details →
-                    </button>
-
-                  </div>
+                 
 
                 </div>
 
@@ -599,8 +586,7 @@ function App() {
 
           <div className="solutions-image">
             <img
-              src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1400&q=90"
-              alt="Data center infrastructure"
+              src="src/assets/images/SERVER1.jpg" alt="Enterprise server rack"
             />
 
             <div className="image-label">
@@ -1024,9 +1010,9 @@ function App() {
 
               </div>
 
-              <div className="modal-price">
+              {/* <div className="modal-price">
                 {selectedProduct.price}
-              </div>
+              </div> */}
 
               <button
                 className="primary-btn"
