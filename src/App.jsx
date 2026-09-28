@@ -1,5 +1,7 @@
 import { useMemo, useState } from "react";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 import shortLogo from "./assets/ShortLogo.PNG";
+import shortLogonobg from "./assets/ShortLogoNoBg.png";
 import "./App.css";
 
 const categories = [
@@ -34,7 +36,7 @@ const products = [
     type: "Server Chassis",
     price: "$2,480.50",
     badge: "FEATURED",
-    image: '/src/assets/images/category-servers.jpg',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb18_5uMom5L6aKWeR2lJr741_iuBaWSbUJnA_LA7ePX1LzQIYFHF4uDUd&s=10',
     description:
       "Professional 2U rack server chassis with redundant power architecture for enterprise deployments.",
     specs: ["2U Rack", "800W PSU", "Redundant Power", "Hot Swap"],
@@ -80,7 +82,7 @@ const products = [
   {
     id: 6,
     name: "20-Core Scalable Server Processor",
-    category: "CPUs & Processors",
+    category: "CPUs & Processors",  
     type: "Server CPUs",
     price: "$742.90",
     badge: "NEW",
@@ -220,7 +222,7 @@ function App() {
         <div className="container nav-inner">
 
           <a className="logo" href="#home" aria-label="Nextera home">
-            <img className="brand-logo" src={shortLogo} alt="Nextera logo" />
+            <img className="brand-logo" src={shortLogonobg} alt="Nextera logo" />
             <span className="brand-copy">
               <strong>NextEra</strong>
               <small>TECHNOLOGIES</small>
@@ -243,9 +245,9 @@ function App() {
               Products
             </a>
 
-            <a href="#categories" onClick={() => setMobileMenu(false)}>
+            {/* <a href="#categorycatalog" onClick={() => setMobileMenu(false)}>
               Categories
-            </a>
+            </a> */}
 
             <a href="#about" onClick={() => setMobileMenu(false)}>
               About
@@ -485,7 +487,7 @@ Servers, storage, networking, and enterprise IT components sourced for B2B busin
             <div className="catalog-search">
               <span>⌕</span>
 
-              <input
+              <input id="categorycatalog"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 placeholder="Search products..."
@@ -495,7 +497,7 @@ Servers, storage, networking, and enterprise IT components sourced for B2B busin
           </div>
 
           {/* FILTERS */}
-          <div className="filters">
+          <div   className="filters">
             {categories.map((category) => (
               <button
                 key={category}
@@ -586,7 +588,7 @@ Servers, storage, networking, and enterprise IT components sourced for B2B busin
 
           <div className="solutions-image">
             <img
-              src="src/assets/images/SERVER1.jpg" alt="Enterprise server rack"
+              src="https://img.magnific.com/free-photo/modern-data-center-providing-cloud-services-enabling-businesses-access-computing-resources-storage-demand-internet-server-room-infrastructure-3d-render-animation_482257-65963.jpg?semt=ais_hybrid&w=740&q=80" alt="Enterprise server rack"
             />
 
             <div className="image-label">
@@ -602,9 +604,9 @@ Servers, storage, networking, and enterprise IT components sourced for B2B busin
             </span>
 
             <h2>
-              The right hardware.
+              Premium Equipment
               <br />
-              <span>Without the long wait.</span>
+              <span>Zero Lead Time.</span>
             </h2>
 
             <p>
@@ -799,8 +801,9 @@ Servers, storage, networking, and enterprise IT components sourced for B2B busin
               </div>
 
               <div>
-                <span>LOCATION</span>
-                <p>United States</p>
+                <span>Address</span>
+                <p>1621 Central Ave Cheyenne,</p>
+                <p>WY 82001, Wyoming, USA</p>
               </div>
 
             </div>
@@ -884,11 +887,14 @@ Servers, storage, networking, and enterprise IT components sourced for B2B busin
 
           <div className="footer-brand">
 
-            <a className="logo footer-logo" href="#home">
-              <span className="logo-mark">N</span>
+           
 
-              <span>
-                <strong>NextEra</strong>
+
+            <a className="logo" href="#home" aria-label="Nextera home">
+            <img className="brand-logo" src={shortLogonobg}  alt="Nextera logo" />
+            <span className="brand-copy">
+             
+                <span className="branddarkname">NextEra</span>
                 <small>TECHNOLOGIES</small>
               </span>
             </a>
@@ -899,9 +905,10 @@ Servers, storage, networking, and enterprise IT components sourced for B2B busin
             </p>
 
             <div className="socials">
-              <a href="#linkedin">in</a>
-              <a href="#facebook">f</a>
-              <a href="#x">X</a>
+              <a href="#linkedin" aria-label="LinkedIn" title="LinkedIn"><FaLinkedinIn /></a>
+              <a href="#facebook" aria-label="Facebook" title="Facebook"><FaFacebookF /></a>
+              <a href="#instagram" aria-label="Instagram" title="Instagram"><FaInstagram /></a>
+              <a href="#x" aria-label="X" title="X"><FaXTwitter /></a>
             </div>
 
           </div>

@@ -33,6 +33,13 @@ body {
   overflow-x: hidden;
 }
 
+.branddarkname{
+
+  color: var(--off-white);
+  font-weight: 600;
+}
+
+
 button,
 input,
 textarea {
@@ -1126,6 +1133,11 @@ a {
   border-radius: 5px;
   color: #9bacbf;
   font-size: 11px;
+}
+
+.socials svg {
+  width: 15px;
+  height: 15px;
 }
 
 .footer-column h4 {
